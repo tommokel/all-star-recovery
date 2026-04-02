@@ -2,7 +2,39 @@
   .services {
     grid-template-columns: 1fr;
   }
-} .service{background:white;padding:25px;border-radius:8px;box-shadow:0 3px 8px rgba(0,0,0,0.1);text-align:center;font-size:18px;} .area-list{columns:2;font-size:18px;} .review{background:white;padding:20px;margin-bottom:15px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);} .map{margin-top:20px;border-radius:8px;overflow:hidden;} footer{background:#000;color:white;text-align:center;padding:30px;margin-top:40px;} .contact-box{text-align:center;font-size:20px;} </style> </head> <body> <header> <img src="logo.png" alt="All Star Recovery Logo" style="max-width:150px; display:block; margin: 0 auto 15px;"> <h1 class="logo">All Star Recovery</h1> <p>24/7 Emergency Towing & Breakdown Recovery</p> <p>Slough • West London • Berkshire</p> <p style="font-size:20px; font-weight:bold; color:#d90000; margin-top:15px;">
+} .service{background:white;padding:25px;border-radius:8px;box-shadow:0 3px 8px rgba(0,0,0,0.1);text-align:center;font-size:18px;} .area-list{columns:2;font-size:18px;} .review{background:white;padding:20px;margin-bottom:15px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);} .map{margin-top:20px;border-radius:8px;overflow:hidden;} footer{background:#000;color:white;text-align:center;padding:30px;margin-top:40px;} .contact-box{text-align:center;font-size:20px;} .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-items: center; /* centers items horizontally */
+}
+
+.why-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.icon-circle {
+  background: #d90000;
+  color: white;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}</style> </head> <body> <header> <img src="logo.png" alt="All Star Recovery Logo" style="max-width:150px; display:block; margin: 0 auto 15px;"> <h1 class="logo">All Star Recovery</h1> <p>24/7 Emergency Towing & Breakdown Recovery</p> <p>Slough • West London • Berkshire</p> <p style="font-size:20px; font-weight:bold; color:#d90000; margin-top:15px;">
     ⚡ Fast response ⚡ <br> 30–60 minutes
      <p style="font-size:18px; margin-top:10px;">
     ⭐ 5-Star Rated Service | 🛡️ Fully Insured | 📍 Local & Reliable
@@ -11,19 +43,35 @@
   <img src="truck.jpg" alt="All Star Recovery Truck" style="max-width:100%; height:auto; border-radius:8px;">
 </div> <div class="section"> <h2>Fast & Reliable Vehicle Recovery</h2> <p style="text-align:center;font-size:18px;"> All Star Recovery provides 24/7 emergency towing in Slough, breakdown recovery across West London, and fast roadside assistance throughout Berkshire. We operate around the clock to get you back on the road quickly and safely. </p> </div> <div class="section"> <h2>Our Services</h2> <div class="services"> <div class="service">📞 Need help now? Call for a fast quote & immediate recovery</div> <div class="service">🚗 Emergency Vehicle Towing</div> <div class="service">🔧 Breakdown Recovery</div> <div class="service">🔋 Jump Start Service</div> <div class="service">🚙 Vehicle Transport</div> <div class="service">🛻 Accident Recovery</div>
  <div class="section">
-   
 <div class="section">
   <h2>Why Choose All Star Recovery?</h2>
-  
-  <div class="why-container"> <!-- NEW WRAPPER -->
+
+  <div class="why-container">
     <div class="why-grid">
-      <div class="why-item">⚡ Fast Response – 30–60 minutes</div>
-      <div class="why-item">🕒 Available 24/7</div>
-      <div class="why-item">⭐ 5-Star Rated Service</div>
-      <div class="why-item">🛡️ Fully Insured</div>
-      <div class="why-item">📍 Local Experts – Slough & West London</div>
-      <div class="why-item">💷 Competitive Pricing</div>
-      <div class="why-item">📞 Call now for fast, reliable recovery you can trust</div>
+      <div class="why-item">
+        <div class="icon-circle">⚡</div>
+        <p>Fast Response – 30–60 minutes</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-circle">🕒</div>
+        <p>Available 24/7</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-circle">⭐</div>
+        <p>5-Star Rated Service</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-circle">🛡️</div>
+        <p>Fully Insured</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-circle">📍</div>
+        <p>Local Experts – Slough & West London</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-circle">💷</div>
+        <p>Competitive Pricing</p>
+      </div>
     </div>
   </div>
 </div>
@@ -31,57 +79,6 @@
 
 
 
-
-
-
-
-
-
-   
-   .section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-  <h2>.section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}Why Choose All Star Recovery?</h2>
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 20px auto;
-  justify-items: center;
-}
-
-.why-item {
-  background: white;
-  padding: 18px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-  font-size: 16px;
-  text-align: center;
-  line-height: 1.5;
-  width: 100%
-  max-width: 280px;
-     .section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 50px 20px;
-  clear: both;
-}
-}
-  <div class="section">
-  <h2>Why Choose All Star Recovery?</h2>
-
-  <div class="why-grid">
-    <div class="why-item">⚡ Fast Response – 30–60 minutes</div>
-    <div class="why-item">🕒 Available 24/7</div>
-    <div class="why-item">⭐ 5-Star Rated Service</div>
-    <div class="why-item">🛡️ Fully Insured</div>
-    <div class="why-item">📍 Local Experts – Slough & West London</div>
-    <div class="why-item">💷 Competitive Pricing</div>
-  </div>
 📞 Call now for fast, reliable recovery you can trust
 </p>
   </div>
